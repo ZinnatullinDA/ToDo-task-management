@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta content="true" name="HandheldFriendly" />
+    <meta content="width" name="MobileOptimized" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+
+    <div style="margin: 2% 1%; text-align: center;" id="top">
+        <h1>ToDo List Manager</h1>
+        <p>Двойной клик по актуальной задаче – завершит ее, по выполненной задаче – удалит.</p>
+        <div id="kb-manage_fields" class="neu kbmain">
+            <div id="input-field">
+                <input class="neu m0" type="text" name="user-input" id="user-input" placeholder="Напишите здесь свое задание...">
+                <button id="button-addtolist" class="m0"><span class="i">+</span></button>
+            </div>
+            <button id="kbmain-show-even" class="m0 kbbutton">четные</button>
+            <button id="kbmain-show-odd" class="m0 kbbutton">нечетные</button>
+            <button id="kbmain-shift" title="Remove the first task from field" class="m0 kbbutton">Удалить первую задачу</button>
+            <button id="kbmain-pop" title="Remove the last task from field" class="m0 kbbutton">Удалить последнюю задачу</button>
+        </div>
+    </div>
+   
+    <div id="all-tasks">
+        <h2 id="h2-actual_tasks">Актуальные задачи</h2>
+        <div id="task-field">
+            <p id="task-field-nothing" class="h2-task-type" style="display: inherit;">Здесь пока что ничего нет...</p>
+        </div>
+
+        <h2 id="h2-completed_tasks">Выполненные задачи</h2>
+        <div id="task-field-completed">
+            <p id="task-field-completed_nothing" class="h2-task-type" style="display: inherit;">Здесь пока что ничего нет...</p>
+        </div>
+
+    </div>
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
